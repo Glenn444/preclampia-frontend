@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 
 function RouteComponent() {
   const { mutateAsync, data } = useGuessWord();
-  const [loading,setLoading] = useState<boolean>();
+  const [loading, setLoading] = useState<boolean>();
   const [formData, setFormData] = useState({
     Age: "",
     Pre_pregnancy_Weight: "",
@@ -40,18 +40,16 @@ function RouteComponent() {
       [id]: value,
     }));
   };
-  const handleSubmit = async() => {
+  const handleSubmit = async () => {
     try {
       console.log("Form Data:", formData);
       setLoading(true); // show loading spinner
       const result = await mutateAsync(formData);
-      setLoading(false) // call API
-      console.log("Prediction Result:", result);  // show response
+      setLoading(false); // call API
+      console.log("Prediction Result:", result); // show response
     } catch (err) {
       console.error("Error while predicting:", err);
     }
-   
-    
   };
   const handleSelectChange = (field: string, value: string) => {
     setFormData((prev) => ({
@@ -59,7 +57,7 @@ function RouteComponent() {
       [field]: value,
     }));
   };
- 
+
   return (
     <>
       <div className="text-white text-xl flex justify-center">
@@ -232,10 +230,13 @@ function RouteComponent() {
             Check Preeclampia
           </Button>
         </div>
-        {loading ? <h1>Loading...</h1> :(
-        <h1 className="text-2xl text-green-600">
-        {data.prediction}
-        </h1>
+        {loading ? (
+          <h1>Loading...</h1>
+        ) : (
+          data &&
+          data.prediction && (
+            <h1 className="text-2xl text-green-600">{data.prediction}</h1>
+          )
         )}
       </div>
     </>
