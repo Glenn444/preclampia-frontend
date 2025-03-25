@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+@layer base {
+  * {
+    
+  }
+  body {
+   background-color: #070231fa;
+  }
+}
