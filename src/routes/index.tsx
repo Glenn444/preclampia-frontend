@@ -227,7 +227,7 @@ function RouteComponent() {
             onClick={handleSubmit}
             className="bg-white rounded-2xl text-green-500 h-[70px] w-[140px]"
           >
-            Check Preeclampia
+            Check Preeclampsia
           </Button>
         </div>
         {loading ? (
