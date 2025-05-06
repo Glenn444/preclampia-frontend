@@ -115,7 +115,7 @@ function RouteComponent() {
             </SelectContent>
           </Select>
         </div>
-{/*         <div className="grid w-full max-w-lg items-center gap-1.5">
+        <div className="grid w-full max-w-lg items-center gap-1.5">
           <Label>Socio Economic Status</Label>
           <Select
             onValueChange={(value) =>
@@ -131,7 +131,7 @@ function RouteComponent() {
               <SelectItem value="2">High</SelectItem>
             </SelectContent>
           </Select>
-        </div> */}
+        </div>
 
         <div className="grid w-full max-w-lg items-center gap-1.5">
           <Label>History of Hypertension</Label>
