@@ -63,7 +63,7 @@ function RouteComponent() {
       <div className="text-white text-xl flex justify-center">
         <div>
           <h1>Hello!!</h1>
-          <h1>Check if you have Preclampia</h1>
+          <h1>Check if you have Preeclampsia</h1>
         </div>
       </div>
 
@@ -116,7 +116,7 @@ function RouteComponent() {
           </Select>
         </div>
         <div className="grid w-full max-w-lg items-center gap-1.5">
-          <Label>Socio Economic Status</Label>
+          <Label>Social-Economic Status</Label>
           <Select
             onValueChange={(value) =>
               handleSelectChange("Socioeconomic_Status", value)
