@@ -240,7 +240,7 @@ function RouteComponent() {
         )}
       </div>
       <div>
-        <h1>About the App</h1>
+        <h1><strong>Explainability</strong></h1>
     
     <p>This app provides a predictive analysis to help individuals assess their risk of developing preeclampsia during pregnancy. By entering key information such as age, pre-pregnancy weight, annual income, socioeconomic status, and medical history (including hypertension, diabetes, preeclampsia, and proteinuria levels), the app uses a machine learning model to analyze your data and predict whether you are at risk of preeclampsia.</p>
     
